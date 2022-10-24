@@ -1,4 +1,4 @@
-# Commentary:#
+# Commentary:
 
 This is an interface for managing Subversion working copies.  It
 can show you an up-to-date view of the current status, and commit

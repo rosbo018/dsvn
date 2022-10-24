@@ -535,7 +535,7 @@ VERBOSE-P."
     (let ((start (point)))
       (unless (re-search-forward "^r\\([0-9]+\\) |" nil t)
         (error "Found no commit"))
-      (let* ((commit-id (string-to-int (match-string 1)))
+      (let* ((commit-id (string-to-number (match-string 1)))
              (new (svn-run-hidden 'log
                                   (append (and verbose-p '("-v"))
                                           '("-r")
@@ -583,7 +583,7 @@ VERBOSE-P."
       (while (and (re-search-forward svn-log-entry-start-re nil t)
                   (setq start (point))
                   (re-search-forward "^r\\([0-9]+\\) |" nil t)
-                  (if (/= (string-to-int (match-string 1)) commit-id)
+                  (if (/= (string-to-number (match-string 1)) commit-id)
                       t
                     (setq found t)
                     nil))))
@@ -598,7 +598,7 @@ VERBOSE-P."
     (re-search-backward svn-log-entry-start-re nil t)
     (unless (re-search-forward "^r\\([0-9]+\\) |" nil t)
       (error "Found no commit"))
-    (string-to-int (match-string 1))))
+    (string-to-number (match-string 1))))
 
 (defun svn-log-show-diff ()
   "Show the changes introduced by the changeset under point."

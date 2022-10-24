@@ -1,0 +1,4 @@
+danielsh = Daniel Shahaf danielsh@apache.org
+dkagedal = David Kagedal davidk@lysator.liu.se
+kfogel = Karl Fogel kfogel@red-bean.com
+mattiase = Mattias Engdegård mattiase@acm.org

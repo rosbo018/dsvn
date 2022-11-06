@@ -4,8 +4,7 @@
 ;; Copyright 2010 Intel
 
 ;; Author: David Kågedal <davidk@lysator.liu.se>
-;;	   Mattias Engdegård <mattiase@acm.org>
-;; Maintainer: Mattias Engdegård <mattiase@acm.org>
+;; Maintainer: Ryan Osborne <rosbo018@uottawa.ca>
 ;; Created: 27 Jan 2006
 ;; Keywords: docs
 
